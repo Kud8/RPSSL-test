@@ -56,7 +56,7 @@ module.exports = {
         ],
         "react/self-closing-comp": "warn",
         "consistent-return": "warn",
-        "import/prefer-default-export": "warn",
+        "import/prefer-default-export": "off",
         "no-unused-vars": "off",
     },
 };
