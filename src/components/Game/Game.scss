@@ -1,5 +1,5 @@
 .Game {
-  padding: 0 10px 70px;
+  padding: 0 10px 100px;
   text-align: center;
   font-size: 18px;
   width: fit-content;
@@ -9,5 +9,7 @@
   &__choices {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
