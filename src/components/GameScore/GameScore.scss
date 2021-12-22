@@ -1,0 +1,11 @@
+.GameScore {
+  margin-bottom: 20px;
+
+  &__wins {
+    color: #5aa27c;
+    font-weight: bold;
+  }
+  &__loses {
+    color: #cc0033;
+  }
+}
