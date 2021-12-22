@@ -1,8 +1,8 @@
 import { ResultType } from "./types";
 
-export const getWins = () => +(localStorage.getItem("wins") ?? 0);
+export const getWins = () => parseInt(localStorage.getItem("wins") ?? "0", 10) || 0;
 
-export const getLoses = () => +(localStorage.getItem("loses") ?? 0);
+export const getLoses = () => parseInt(localStorage.getItem("loses") ?? "0", 10) || 0;
 
 export const addResult = (result: ResultType) => {
     switch (result) {
