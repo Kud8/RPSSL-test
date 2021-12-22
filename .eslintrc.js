@@ -27,7 +27,7 @@ module.exports = {
         "react/jsx-props-no-spreading": "off",
         "react/no-unescaped-entities": "off",
         "react/require-default-props": "off",
-        "react/button-has-type": "warn",
+        "react/button-has-type": "off",
         semi: [2, "always"],
         "no-use-before-define": "off",
         "no-restricted-syntax": "off",
