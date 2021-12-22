@@ -1,0 +1,36 @@
+$loader-color: #5aa27c;
+
+@keyframes animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.Loader {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap;
+
+  &__item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $loader-color;
+    animation: animation 0.8s ease-in-out alternate infinite;
+
+    &:nth-child(1) {
+      animation-delay: -0.4s;
+    }
+
+    &:nth-child(2) {
+      animation-delay: -0.2s;
+    }
+  }
+}

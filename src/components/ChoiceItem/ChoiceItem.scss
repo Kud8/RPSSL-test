@@ -1,0 +1,36 @@
+.ChoiceItem {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+
+  margin: 0 5px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--selected {
+    border: 1px solid #5aa27c;
+  }
+
+  &--selected-by-enemy {
+    border: 1px solid #3333ff;
+  }
+
+  &--disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+}
