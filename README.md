@@ -3,6 +3,8 @@
 There is a game made popular on the show “The Big Bang Theory”
 You can see the rules here: http://www.samkass.com/theories/RPSSL.html
 
+This game is deployed here: https://rpssl-test.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
