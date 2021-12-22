@@ -6,6 +6,7 @@ import Loader from "../Loader/Loader";
 import { ChoiceItem } from "../ChoiceItem/ChoiceItem";
 import { GameResult } from "../GameResult/GameResult";
 import { ResetGame } from "../ResetGame/ResetGame";
+import { addErrorNotification } from "../../utils/notification";
 
 export const Game = () => {
     const [choices, setChoices] = useState<ChoicesType | undefined>(undefined);
@@ -30,7 +31,7 @@ export const Game = () => {
             setSelectedEnemyChoiceId(computer);
             setCurrentPlayResult(results);
         } catch (e) {
-            console.log(e);
+            addErrorNotification("Error", "Error loading computer choice");
             handleResetGame();
         }
     };
