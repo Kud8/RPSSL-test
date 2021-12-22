@@ -5,7 +5,13 @@
     color: #5aa27c;
     font-weight: bold;
   }
+
   &__loses {
     color: #cc0033;
+  }
+
+  &__reset {
+    color: #3333ff;
+    cursor: pointer;
   }
 }

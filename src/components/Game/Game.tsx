@@ -7,7 +7,7 @@ import { ChoiceItem } from "../ChoiceItem/ChoiceItem";
 import { GameResult } from "../GameResult/GameResult";
 import { ResetGame } from "../ResetGame/ResetGame";
 import { addErrorNotification } from "../../utils/notification";
-import { addResult, getLoses, getWins } from "../../utils/storage";
+import { addResult, getLoses, getWins, resetResults } from "../../utils/storage";
 import { GameScore } from "../GameScore/GameScore";
 
 export const Game = () => {
@@ -43,11 +43,17 @@ export const Game = () => {
         }
     };
 
+    const handleResetScore = () => {
+        resetResults();
+        setWins(0);
+        setLoses(0);
+    };
+
     return (
         <div className="Game">
             {choices ? (
                 <>
-                    <GameScore wins={wins} loses={loses} />
+                    <GameScore wins={wins} loses={loses} onReset={handleResetScore} />
                     <GameResult result={currentPlayResult} />
                     <div className="Game__choices">
                         {choices.map((choice, i) => (

@@ -16,3 +16,8 @@ export const addResult = (result: ResultType) => {
             break;
     }
 };
+
+export const resetResults = () => {
+    localStorage.setItem("wins", "0");
+    localStorage.setItem("loses", "0");
+};
